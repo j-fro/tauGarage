@@ -23,4 +23,12 @@ $(document).ready(function() {
 
 function displayGarage() {
   console.log("displaying the garage: ", garageArray);
+  $('#garageDisplay').html('');
+  garageArray.forEach(function(car) {
+    console.log("Displaying car: ", car);
+    $('#garageDisplay').append(
+      '<div class="carDisplay"><img src="' + car.imageUrl + '"><p>Year: ' + car.year + '</p><p>Make: '
+      + car.make + '</p><p>Model: ' + car.model + '</p><p>Description: ' + car.description + '</p></div>'
+    );
+  });
 }
