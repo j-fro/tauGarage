@@ -1,0 +1,10 @@
+.carDisplay {
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
+
+.carDisplay img {
+  height: 100px;
+  width: 100px;
+}

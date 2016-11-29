@@ -9,7 +9,7 @@ Technologies
 
 [x] add cars to Garage from user input
 
-[] display on DOM all cars in Garage
+[x] display on DOM all cars in Garage
 
 Stretch Goals
 -------------
