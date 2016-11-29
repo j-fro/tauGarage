@@ -1,5 +1,7 @@
 console.log('testify');
 
+var garageArray = [];
+
 $(document).ready(function() {
   console.log('jQ ready freddy');
   $('#parkCarButton').on('click', function() {
@@ -13,5 +15,12 @@ $(document).ready(function() {
       imageUrl: $('#imageUrl').val()
     };
     console.log(newCar);
+    garageArray.push(newCar);
+    console.log("The garage: ", garageArray);
+    displayGarage();
   });
 });
+
+function displayGarage() {
+  console.log("displaying the garage: ", garageArray);
+}
